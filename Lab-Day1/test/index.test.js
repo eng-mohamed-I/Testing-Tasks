@@ -41,7 +41,7 @@ describe("createArray", function () {
     const result = createArray(3);
     assert.include(result, 25);
   });
-
+// >>
   it("should delay the testing process by 5 seconds", function (done) {
     setTimeout(() => {
       const result = createArray(3);
