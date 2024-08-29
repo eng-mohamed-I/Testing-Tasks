@@ -22,8 +22,8 @@ const createArray = (number) => {
   const myArray = Array.from(Array(number).keys());
   return myArray;
 };
-
-module.exports = { capitalizeText, createArray };
+export { capitalizeText, createArray };
+// module.exports = { capitalizeText, createArray };
 
 //test that the return value of type array
 //test if we pass 3 it will return array of length 3 and test it's include 1
