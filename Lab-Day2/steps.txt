@@ -1,0 +1,4 @@
+1 - install npm init -y
+2 - install jasmine
+3 - npx jasmine init ==> initail file's
+4 . spec -> support -> index.spec.js
