@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "nodemon --exec jasmine"
   },
   "keywords": [],
   "author": "",
