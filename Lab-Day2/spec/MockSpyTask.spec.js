@@ -7,9 +7,10 @@ function sumOfValues() {
   return counter.currentValues();
 }
 
+//test cases
 describe("mock and spy", function () {
+  //test case
   it("spying", function () {
-    //test case
     spyOn(counter, "currentValues").and.returnValue(100);
     const result = sumOfValues(); // fun use spy
 
@@ -18,15 +19,15 @@ describe("mock and spy", function () {
     expect(counter.currentValues).toHaveBeenCalledTimes(1);
   });
 
+  // test case
   it("mocking", function () {
-    //mock function
+    //mock that take string and return length of it
     const mockFunction = jasmine.createSpy().and.callFake((str) => {
       return str.length;
     });
 
-    // call it
-    mockFunction("test");
-    mockFunction("mocking");
+    mockFunction("test"); // call 1
+    mockFunction("mocking"); // call 2
 
     //make sure it called 2
     expect(mockFunction).toHaveBeenCalledTimes(2);
